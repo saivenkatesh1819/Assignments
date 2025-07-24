@@ -1,0 +1,25 @@
+{
+  "cartItems": [
+    {
+      "id": "1",
+      "name": "Family Snorkel Adventure",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5n5JcQ0LzulIjcrt0oR77A90ouiR2XF_jQA&s",
+      "guests": 3,
+      "day": "Day 3 - Roatan, Honduras",
+      "time": "10:00am",
+      "price": 297.00
+    },
+    {
+      "id": "2",
+      "name": "Island Hopping Tour",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57S6SyPIivMajgHMiYeQic82-FBrgwcPH_A&s",
+      "guests": 2,
+      "day": "Day 2 - Caye Caulker, Belize",
+      "time": "09:00am",
+      "price": 150.00
+    }
+  ],
+  "orderSummary": {
+    "totalPrice": 447.00
+  }
+}

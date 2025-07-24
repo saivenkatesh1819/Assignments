@@ -12,7 +12,7 @@ struct ProductListView: View {
     @StateObject private var viewModel = ProductListViewModel()
     
     var body: some View {
-        NavigationView {
+        
             List(viewModel.products) { product in
                 HStack(spacing: 15) {
                     if let uiImage = viewModel.images[product.id] {
@@ -63,4 +63,4 @@ struct ProductListView: View {
             }
         }
     }
-}
+
