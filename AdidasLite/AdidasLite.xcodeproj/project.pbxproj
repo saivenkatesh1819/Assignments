@@ -10,6 +10,13 @@
 		370A4BD52E14648100A44F44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 370A4BD42E14648100A44F44 /* Alamofire */; };
 		370A4BDE2E1471A900A44F44 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 370A4BDD2E1471A900A44F44 /* Moya */; };
 		370A4C232E16F75200A44F44 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 370A4C222E16F75200A44F44 /* KeychainAccess */; };
+		37A280C02E27FE3500397786 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37A280BF2E27FE3500397786 /* FirebaseAnalytics */; };
+		37A280C22E27FE3500397786 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 37A280C12E27FE3500397786 /* FirebaseCore */; };
+		37A280C42E27FE3500397786 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 37A280C32E27FE3500397786 /* FirebaseInstallations */; };
+		37A280C62E27FE3500397786 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 37A280C52E27FE3500397786 /* FirebaseMessaging */; };
+		37B655C12E20411F00F5647A /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 37B655C02E20411F00F5647A /* Stripe */; };
+		37B655C32E20411F00F5647A /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 37B655C22E20411F00F5647A /* StripeApplePay */; };
+		37B655C52E20411F00F5647A /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 37B655C42E20411F00F5647A /* StripePaymentSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +78,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A280C02E27FE3500397786 /* FirebaseAnalytics in Frameworks */,
+				37B655C32E20411F00F5647A /* StripeApplePay in Frameworks */,
+				37A280C62E27FE3500397786 /* FirebaseMessaging in Frameworks */,
 				370A4BDE2E1471A900A44F44 /* Moya in Frameworks */,
+				37A280C42E27FE3500397786 /* FirebaseInstallations in Frameworks */,
+				37B655C12E20411F00F5647A /* Stripe in Frameworks */,
 				370A4BD52E14648100A44F44 /* Alamofire in Frameworks */,
+				37B655C52E20411F00F5647A /* StripePaymentSheet in Frameworks */,
+				37A280C22E27FE3500397786 /* FirebaseCore in Frameworks */,
 				370A4C232E16F75200A44F44 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +151,13 @@
 				370A4BD42E14648100A44F44 /* Alamofire */,
 				370A4BDD2E1471A900A44F44 /* Moya */,
 				370A4C222E16F75200A44F44 /* KeychainAccess */,
+				37B655C02E20411F00F5647A /* Stripe */,
+				37B655C22E20411F00F5647A /* StripeApplePay */,
+				37B655C42E20411F00F5647A /* StripePaymentSheet */,
+				37A280BF2E27FE3500397786 /* FirebaseAnalytics */,
+				37A280C12E27FE3500397786 /* FirebaseCore */,
+				37A280C32E27FE3500397786 /* FirebaseInstallations */,
+				37A280C52E27FE3500397786 /* FirebaseMessaging */,
 			);
 			productName = AdidasLite;
 			productReference = 370A4BA42E14634300A44F44 /* AdidasLite.app */;
@@ -224,6 +245,8 @@
 				370A4BD32E14648100A44F44 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				370A4BDC2E1471A900A44F44 /* XCRemoteSwiftPackageReference "Moya" */,
 				370A4C212E16F75200A44F44 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				37B655BF2E20411F00F5647A /* XCRemoteSwiftPackageReference "stripe-ios" */,
+				37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 370A4BA52E14634300A44F44 /* Products */;
@@ -616,6 +639,22 @@
 				kind = branch;
 			};
 		};
+		37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		37B655BF2E20411F00F5647A /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.16.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -633,6 +672,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 370A4C212E16F75200A44F44 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		37A280BF2E27FE3500397786 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		37A280C12E27FE3500397786 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		37A280C32E27FE3500397786 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		37A280C52E27FE3500397786 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37A280BE2E27FE3500397786 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		37B655C02E20411F00F5647A /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37B655BF2E20411F00F5647A /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		37B655C22E20411F00F5647A /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37B655BF2E20411F00F5647A /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+		37B655C42E20411F00F5647A /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37B655BF2E20411F00F5647A /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

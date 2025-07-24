@@ -54,6 +54,7 @@ struct ProductListView: View {
                         }
                     }
                 }
+                PaymentView(product: product)
                 .padding(.vertical, 8)
             }
             .navigationTitle("Adidas Lite")
